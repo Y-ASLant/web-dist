@@ -41,7 +41,7 @@ export type PreviewComponent = Pick<Preview, "name" | "component">
 
 const previews: Preview[] = [
   {
-    name: "HTML render",
+    name: "HTML Preview",
     exts: ["html"],
     component: lazy(() => import("./html")),
     prior: true,
@@ -57,12 +57,6 @@ const previews: Preview[] = [
     name: "Markdown",
     type: ObjType.TEXT,
     component: lazy(() => import("./markdown")),
-    prior: true,
-  },
-  {
-    name: "Markdown with word wrap",
-    type: ObjType.TEXT,
-    component: lazy(() => import("./markdown_with_word_wrap")),
     prior: true,
   },
   {
