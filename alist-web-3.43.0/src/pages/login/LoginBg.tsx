@@ -1,6 +1,7 @@
 import { Box, useColorModeValue } from "@hope-ui/solid"
-import CornerBottom from "./CornerBottom"
-import CornerTop from "./CornerTop"
+// 移除这两行引入
+// import CornerBottom from "./CornerBottom"
+// import CornerTop from "./CornerTop"
 
 const LoginBg = () => {
   const overlayColor = useColorModeValue("rgba(255, 255, 255, 0.35)", "rgba(0, 0, 0, 0.35)")
@@ -27,32 +28,14 @@ const LoginBg = () => {
         h="100%"
         bgColor={overlayColor()}
       />
-      <Box
-        pos="absolute"
-        right={{
-          "@initial": "-100px",
-          "@sm": "-300px",
-        }}
-        top={{
-          "@initial": "-1170px",
-          "@sm": "-900px",
-        }}
-      >
+      {/* 移除以下两个 Box 组件
+      <Box>
         <CornerTop />
       </Box>
-      <Box
-        pos="absolute"
-        left={{
-          "@initial": "-100px",
-          "@sm": "-200px",
-        }}
-        bottom={{
-          "@initial": "-760px",
-          "@sm": "-400px",
-        }}
-      >
+      <Box>
         <CornerBottom />
       </Box>
+      */}
     </Box>
   )
 }
