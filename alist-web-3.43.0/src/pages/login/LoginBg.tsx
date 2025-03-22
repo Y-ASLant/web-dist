@@ -3,10 +3,9 @@ import CornerBottom from "./CornerBottom"
 import CornerTop from "./CornerTop"
 
 const LoginBg = () => {
-  const bgColor = useColorModeValue("#a9c6ff", "#062b74")
+  const overlayColor = useColorModeValue("rgba(255, 255, 255, 0.35)", "rgba(0, 0, 0, 0.35)")
   return (
     <Box
-      bgColor={bgColor()}
       pos="fixed"
       top="0"
       left="0"
@@ -14,7 +13,20 @@ const LoginBg = () => {
       zIndex="-1"
       w="100vw"
       h="100vh"
+      style={{
+        "background-image": "url('/images/login-bg.jpg')",
+        "background-size": "cover",
+        "background-position": "center",
+      }}
     >
+      <Box
+        pos="absolute"
+        top="0"
+        left="0"
+        w="100%"
+        h="100%"
+        bgColor={overlayColor()}
+      />
       <Box
         pos="absolute"
         right={{
