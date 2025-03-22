@@ -249,15 +249,15 @@ const Search = () => {
       onClose={onClose}
       closeOnEsc={false}
       size={{
-        "@initial": "sm",
-        "@sm": "lg",
-        "@md": "2xl",
+        "@initial": "md",
+        "@sm": "xl",
+        "@md": "3xl",
       }}
       initialFocus="#search-input"
       scrollBehavior="inside"
     >
       <ModalOverlay bg="$blackAlpha5" />
-      <ModalContent mx="$2">
+      <ModalContent mx="$1">
         <ModalCloseButton />
         <ModalHeader>{t("home.search.search")}</ModalHeader>
         <ModalBody>

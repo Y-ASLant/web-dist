@@ -33,9 +33,6 @@ export const Download = (props: { openWith?: boolean }) => {
         <Button colorScheme="accent" onClick={() => copyCurrentRawLink(true)}>
           {t("home.toolbar.copy_link")}
         </Button>
-        <Button as="a" href={objStore.raw_url} target="_blank">
-          {t("home.preview.download")}
-        </Button>
         <Popover opened={pinned() || hover()} motionPreset="none">
           <PopoverTrigger
             as={IconButton}

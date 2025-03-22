@@ -104,7 +104,6 @@ const Login = () => {
       PublicKeyCredential &&
       "isConditionalMediationAvailable" in PublicKeyCredential
     ) {
-      // @ts-expect-error
       return await PublicKeyCredential.isConditionalMediationAvailable()
     } else {
       return false
@@ -136,7 +135,6 @@ const Login = () => {
       try {
         const options = parseRequestOptionsFromJSON(data.options)
         if (conditional) {
-          // @ts-expect-error
           options.mediation = "conditional"
         }
         const credentials = await get(options)

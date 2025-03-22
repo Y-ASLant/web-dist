@@ -85,18 +85,7 @@ export const Obj = () => {
               password={password}
               setPassword={setPassword}
               enterCallback={() => refresh(true)}
-            >
-              <Text>{t("global.have_account")}</Text>
-              <Text
-                color="$info9"
-                as={LinkWithBase}
-                href={`/@login?redirect=${encodeURIComponent(
-                  location.pathname,
-                )}`}
-              >
-                {t("global.go_login")}
-              </Text>
-            </Password>
+            />
           </Match>
           <Match
             when={[State.Folder, State.FetchingMore].includes(objStore.state)}

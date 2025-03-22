@@ -148,18 +148,7 @@ const Profile = () => {
               <AlertTitle mr="$2_5">{t("users.guest-tips")}</AlertTitle>
               <AlertDescription>{t("users.modify_nothing")}</AlertDescription>
             </Alert>
-            <HStack spacing="$2">
-              <Text>{t("global.have_account")}</Text>
-              <Text
-                color="$info9"
-                as={LinkWithBase}
-                href={`/@login?redirect=${encodeURIComponent(
-                  location.pathname,
-                )}`}
-              >
-                {t("global.go_login")}
-              </Text>
-            </HStack>
+
           </>
         }
       >
