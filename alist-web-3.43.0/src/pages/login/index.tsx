@@ -39,11 +39,11 @@ import {
 } from "@github/webauthn-json/browser-ponyfill"
 
 const Login = () => {
-  const logos = getSetting("logo").split("\n")
-  const logo = useColorModeValue(logos[0], logos.pop())
+  // const logos = getSetting("logo").split("\n")
+  // const logo = useColorModeValue(logos[0], logos[logos.length - 1])
   const t = useT()
   const title = createMemo(() => {
-    return `${t("login.login_to")} ${getSetting("site_title")}`
+    return ``
   })
   useTitle(title)
   const bgColor = useColorModeValue("white", "$neutral1")
@@ -214,7 +214,7 @@ const Login = () => {
         spacing="$4"
       >
         <Flex alignItems="center" justifyContent="space-around">
-          <Image mr="$2" boxSize="$12" src={logo()} />
+          <Image mr="$2" boxSize="$12" src="/images/favicon.ico" />
           <Heading color="$info9" fontSize="$2xl">
             {title()}
           </Heading>

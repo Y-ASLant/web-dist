@@ -4,7 +4,7 @@ import { Box, useColorModeValue } from "@hope-ui/solid"
 // import CornerTop from "./CornerTop"
 
 const LoginBg = () => {
-  const overlayColor = useColorModeValue("rgba(255, 255, 255, 0.25)", "rgba(0, 0, 0, 0.25)")
+  const overlayColor = useColorModeValue("rgba(255, 255, 255, 0.03)", "rgba(0, 0, 0, 0.25)")
   return (
     <Box
       pos="fixed"
