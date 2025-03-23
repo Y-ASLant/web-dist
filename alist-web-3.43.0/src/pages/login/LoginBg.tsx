@@ -15,7 +15,7 @@ const LoginBg = () => {
       w="100vw"
       h="100vh"
       style={{
-        "background-image": "url('/images/login-bg.jpg')",
+        "background-image": "url('/images/background.webp')",
         "background-size": "cover",
         "background-position": "center",
       }}
